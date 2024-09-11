@@ -2,7 +2,7 @@ import { Text } from "react-native";
 
 
 const  Hello = () => {
-    return <Text> Good moring to the community </Text> ;
+    return <Text> welcome to symbiose yaar </Text> ;
 };
 
 
