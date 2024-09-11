@@ -1,12 +1,17 @@
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text,  SafeAreaView , View , ScrollView  } from 'react-native';
 
 import Hello from '../components/Hello';
+import Home from '../screens/Home';
+import { NavigationContainer } from '@react-navigation/native';
+import { HomeStack } from '../navigation/Stack';
 
 export default function App() {
-  return <Hello /> ;
+  return (
+    <NavigationContainer>
+        <HomeStack /> 
+    </NavigationContainer>
+    
+  ) ;
 };
 
 
-function Greet() { 
-    return <Text> am reading to code </Text> ;
-}
