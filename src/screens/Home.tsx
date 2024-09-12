@@ -1,13 +1,14 @@
-import { View, Text  ,SafeAreaView , StyleSheet , ScrollView} from 'react-native'
+import { View, Text  ,SafeAreaView , StyleSheet , Image, ScrollView} from 'react-native'
 import React from 'react'
-
+import Hero from '../components/Hero'
 const Home = () => {
   return (
-    <SafeAreaView>
-     <View >
-    <Text> Home page </Text>
+    <SafeAreaView style ={ styles.bgn }  >
+   <View>
+   <Hero />
+   </View>
+     
 
-  </View>
 </SafeAreaView>
   ) ;
 }
@@ -19,7 +20,8 @@ const styles = StyleSheet.create({
     backgroundColor: '#eaeaea',
   },
   bgn:{
-    backgroundColor:'#61dafb',
+    backgroundColor:'#',
+
   } ,
   title: {
     marginTop: 24,
