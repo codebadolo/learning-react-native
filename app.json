@@ -8,6 +8,7 @@
     "orientation": "portrait",
     "icon": "",
     "scheme": "myapp",
+    "platforms": ["android", "ios", "web"],
     "userInterfaceStyle": "automatic",
     "splash": {
       "image": "",

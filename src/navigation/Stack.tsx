@@ -1,21 +1,65 @@
-import { 
-    StyleSheet, Text, View  } from 'react-native'
-import React from 'react'
-import { Home   } from '../screens/Home' ;
-import { Notifications }  from  '../screens/Notifications' ;
-import { Settings }  from  '../screens/Settings' ;
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import Home from '../screens/Home';
+import Notifications from '../screens/Notifications';
+import Settings from '../screens/Settings';
+import Profile from '../screens/Profile';
 
-import { createStackNavigator } from '@react-navigation/stack';
+const Tab = createBottomTabNavigator();
 
-const Stack = createStackNavigator();
-
-function HomeStack() {
+export function HomeStack() {
   return (
-    <Stack.Navigator>
-      <Stack.Screen name="Home" component={Home} />
-      <Stack.Screen name="Notifications" component={Notifications} />
-   
-      <Stack.Screen name="Settings" component={Settings} />
-    </Stack.Navigator>
+    <Tab.Navigator
+     
+    >
+      <Tab.Screen name="Home"
+        component={Home}
+        options={{
+          title: 'Home',
+          headerStyle: {
+            backgroundColor: '#4feb34',
+          },
+          headerTintColor: '#fff',
+          headerTitleStyle: {
+            fontWeight: 'bold',
+          },
+        }} />
+      <Tab.Screen name="Notifications" component={Notifications} 
+       options={{
+          title: 'Notifications',
+          headerStyle: {
+            backgroundColor: '#4feb34',
+          }
+          ,
+          headerTintColor: '#fff',
+          headerTitleStyle: {
+            fontWeight: 'bold',
+          },
+        }}
+          />
+      <Tab.Screen name="Settings" component={Settings}  
+        options={{
+          title: 'Settings',
+          headerStyle: {
+            backgroundColor: '#4feb34',
+          }
+          ,
+          headerTintColor: '#fff',
+          headerTitleStyle: {
+            fontWeight: 'bold',
+          },
+        }}/>
+      <Tab.Screen name="Profile" component={Profile} 
+        options={{
+          title: 'My home',
+          headerStyle: {
+            backgroundColor: '#4feb34',
+          }
+          ,
+          headerTintColor: '#fff',
+          headerTitleStyle: {
+            fontWeight: 'bold',
+          },
+        }}/>
+    </Tab.Navigator>
   );
 }
