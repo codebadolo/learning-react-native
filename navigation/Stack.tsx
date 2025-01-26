@@ -1,9 +1,9 @@
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import Home from '../screens/Home';
-import Notifications from '../screens/Notifications';
-import Settings from '../screens/Settings';
-import Profile from '../screens/Profile';
 import { Ionicons } from '@expo/vector-icons'; // Use this if you're using Expo
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import Home from '../src/screens/Home';
+import Notifications from '../src/screens/Notifications';
+import Profile from '../src/screens/Profile';
+import Settings from '../src/screens/Settings';
 
 const Tab = createBottomTabNavigator();
 

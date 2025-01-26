@@ -13,7 +13,7 @@ export default Hero
 
 const styles = StyleSheet.create({
     textsize: {
-        fontSize: 20,
+        fontSize: 20
    
 
     }
